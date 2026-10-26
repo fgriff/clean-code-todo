@@ -29,11 +29,8 @@ const createNewTaskElement = function (taskString) {
   deleteButtonImg.setAttribute('alt', 'Remove button icon');
   deleteButton.appendChild(deleteButtonImg);
 
-  listItem.appendChild(checkBox);
-  listItem.appendChild(label);
-  listItem.appendChild(editInput);
-  listItem.appendChild(editButton);
-  listItem.appendChild(deleteButton);
+  listItem.append(checkBox, label, editInput, editButton, deleteButton);
+
   return listItem;
 };
 
